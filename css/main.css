@@ -3,16 +3,19 @@
     padding:50px;
  }
 
+
  #caja1{
      width:400px;
      height:400px;
      background-color:#FF0000;
      display: inline-block;/*Para permitir subir a la caja4*/
-     box-sizing: border-box;/*Para conservar las medidas dadas a la caja. También funcionaría con: padding:0px;*/
-     
+     box-sizing: border-box;/*Para conservar las medidas dadas a la caja. También funcionaría con: padding:0px;*/    
  }
- /*En las: caja2 y caja3 ya no es necesario el uso de box-sizing: border-box, ya que con position absolute sus medidas se van a adaptar
- al contenido de caja1*/
+ 
+ /*En las: caja2 y caja3 ya no es necesario el uso de box-sizing: border-box, ya que con position absolute sus medidas se van a adaptar al contenido de caja1*/
+
+ /*Se usó position:absolute porque con esta propiedad no se conserva el espacio en el flujo,
+ que es justo lo que necesito para resolver el ejercicio*/
  #caja2{
      width:200px;
      height:200px;
@@ -67,5 +70,3 @@
      left:700px;
      top:100px;
  }
-/*Se usó position:absolute porque con esta propiedad no se conserva el espacio en el flujo,
- que es justo lo que necesito para resolver el ejercicio*/
